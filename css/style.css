@@ -1262,6 +1262,10 @@ body.light hr.separator {
     transform: translateX(-20px);
   }
 
+  .btn.btn-home:before {
+    content: "\f015";
+  }
+
   .btn.btn-about:before {
     content: "\f007";
   }
