@@ -499,7 +499,7 @@ body.light hr.separator {
 }
 
 .home .bg {
-  background-image: url(../img/2.jpg);
+  background-image: url(../img/main.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1267,8 +1267,8 @@ body.light hr.separator {
   }
 
   .btn.btn-portfolio:before {
-    content: "\f07c";
-    margin-top: -8px;
+    content: "\f0b1";
+    /* margin-top: -8px; */
   }
 
   .btn.btn-preview:before {
