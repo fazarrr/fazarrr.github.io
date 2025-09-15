@@ -1,173 +1,415 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fazar Bahari - Portofolio Programmer</title>
 
+    <link rel="stylesheet" href="styles/main.css" />
 
-<head>
-    <meta charset="utf-8">
-    <title>Fazar Bahari | Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
-    <!-- Template Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
-
-    <!-- Template CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/preloader.min.css" rel="stylesheet">
-    <link href="css/circle.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- CSS Skin File -->
-    <link href="css/skins/yellow.css" rel="stylesheet">
-
-    <!-- Live Style Switcher - demo only -->
-    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
-    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
-    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
-    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
-    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
-    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
-    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
-    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
-
-    <!-- Modernizr JS File -->
-    <script src="js/modernizr.custom.js"></script>
-</head>
-
-<body class="home">
-<!-- Live Style Switcher Starts - demo only -->
-<div id="switcher" class="">
-    <div class="content-switcher">
-        <h4>STYLE SWITCHER</h4>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo">Fazar Bahari</a>
         <ul>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
-            </li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#experience-education">Pengalaman</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li class="mode-toggle">
+            <button id="theme-toggle" aria-label="Toggle light/dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
         </ul>
-           <div id="hideSwitcher">&times;</div>
-    </div>
-</div>
-<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-<!-- Live Style Switcher Ends - demo only -->
-<!-- Header Starts -->
-<header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
-    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-        <li class="icon-box active">
-            <i class="fa fa-home"></i>
-            <a href="index.html">
-                <h2>Home</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-user"></i>
-            <a href="about.html">
-                <h2>About</h2>
-            </a>
-        </li>
-        <!-- <li class="icon-box">
-            <i class="fa fa-briefcase"></i>
-            <a href="portfolio.html">
-                <h2>Portfolio</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-envelope-open"></i>
-            <a href="contact.html">
-                <h2>Contact</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-comments"></i>
-            <a href="blog.html">
-                <h2>Blog</h2>
-            </a>
-        </li> -->
-    </ul>
-    <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
-    <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="list-unstyled" id="menu">
-                <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <!-- <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li> -->
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div
+          class="hero-content"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h1>Halo, saya <span class="highlight">Fazar Bahari</span></h1>
+          <p>
+            Sebagai Software Engineer, saya berdedikasi membangun solusi digital
+            yang andal dan responsif. Saya sangat antusias mengubah ide-ide
+            menjadi produk nyata yang mampu mendigitalisasi proses manual agar
+            lebih efektif dan efisien.
+          </p>
+          <a href="#projects" class="cta-button">Lihat Proyek Saya</a>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+          <img src="assets/images/main.png" alt="Foto Profil Kamu" />
+        </div>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title" data-aos="fade-up">Tentang Saya</h2>
+        <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+          <p>
+            Rasa penasaran saya pada teknologi mendorong saya untuk mendalami
+            dunia *programming*. Saya memiliki keahlian dalam membangun aplikasi
+            yang efisien menggunakan **[Teknologi Utama, misal: JavaScript,
+            Node.js, React, dan database seperti MongoDB]**. Saat ini, saya
+            tertarik untuk berkolaborasi dengan tim yang inovatif dan menghadapi
+            tantangan baru dalam menciptakan solusi yang berdampak. Selain
+            *coding*, saya juga menikmati **[Hobi/Minat, misal: catur atau
+            fotografi]**, yang membantu saya melatih pemikiran strategis dan
+            detail dalam setiap pekerjaan.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience-education">
+        <h2 class="section-title" data-aos="fade-up">
+          Pengalaman & Pendidikan
+        </h2>
+        <div class="timeline-wrapper">
+          <div
+            class="timeline-item"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h3 class="timeline-title">[Jabatan Anda]</h3>
+            <p class="timeline-period">
+              [Nama Perusahaan] | [Tanggal Mulai] - [Tanggal Selesai]
+            </p>
+            <ul class="timeline-details">
+              <li>
+                Bertanggung jawab untuk [tugas 1, misal: mengembangkan fitur
+                baru menggunakan React dan Node.js].
+              </li>
+              <li>
+                Berhasil [pencapaian 2, misal: mengurangi waktu loading halaman
+                sebesar 30%].
+              </li>
+              <li>
+                Berpartisipasi dalam [tugas 3, misal: proses code review dan
+                penerapan CI/CD].
+              </li>
             </ul>
+          </div>
+          <div
+            class="timeline-item"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <h3 class="timeline-title">[Gelar Pendidikan Anda]</h3>
+            <p class="timeline-period">
+              [Nama Universitas] | [Tahun Mulai] - [Tahun Lulus]
+            </p>
+            <ul class="timeline-details">
+              <li>
+                Spesialisasi di bidang [minat, misal: rekayasa perangkat lunak
+                dan sistem database].
+              </li>
+              <li>
+                Menyelesaikan tugas akhir tentang [judul tugas akhir, misal:
+                pengembangan aplikasi *e-commerce* dengan *microservices*].
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <!-- Mobile Menu Ends -->
-</header>
-<!-- Header Ends -->
-<!-- Main Content Starts -->
-<section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1">
-    <div class="color-block d-none d-lg-block"></div>
-    <div class="row home-details-container align-items-center">
-        <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
-        <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
-            <div>
-                <img src="img/mobile.png" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture" />
-                <h6 class="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">hi there !</h6>
-                <h1 class="text-uppercase poppins-font"><span>I'm</span> Fazar Bahari</h1>
-                <p class="open-sans-font">I'm a Information Technology in one of the Bekasi Hospitals & back-end developer focused on data management into valid & as needed. I am passionate about building excellent software that improves the lives of those around me.</p>
-                <a href="about.html" class="btn btn-about">more about me</a>
+      </section>
+
+      <section id="skills">
+        <h2 class="section-title" data-aos="fade-up">Keahlian</h2>
+        <div class="skills-grid">
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+            <i class="fab fa-html5"></i>
+            <h4>HTML & CSS</h4>
+          </div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+            <i class="fab fa-js-square"></i>
+            <h4>JavaScript</h4>
+          </div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+            <i class="fab fa-react"></i>
+            <h4>React.js</h4>
+          </div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+            <i class="fab fa-node-js"></i>
+            <h4>Node.js</h4>
+          </div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+            <i class="fas fa-database"></i>
+            <h4>SQL & NoSQL</h4>
+          </div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
+            <i class="fab fa-aws"></i>
+            <h4>AWS</h4>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title" data-aos="fade-up">Portofolio Proyek</h2>
+        <div class="projects-grid">
+          <div class="project-card" data-aos="zoom-in" data-aos-duration="1000">
+            <img
+              src="assets/images/proyek/1-website-masmitra.png"
+              alt="Proyek 1"
+            />
+            <div class="project-card-content">
+              <h3>Website Rumah Sakit Masmitra</h3>
+              <p>
+                Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang
+                digunakan, seperti **React, Node.js**, dan **MongoDB**.
+              </p>
+              <a href="https://github.com/namakamu/namarepo" target="_blank"
+                >Lihat di GitHub &rarr;</a
+              >
             </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img src="assets/images/proyek/2-sikoper.png" alt="Proyek 2" />
+            <div class="project-card-content">
+              <h3>SIKOPER</h3>
+              <p>
+                Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang
+                digunakan, seperti **Vue.js** dan **Firebase**.
+              </p>
+              <a href="https://github.com/namakamu/namarepo2" target="_blank"
+                >Lihat di GitHub &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img src="assets/images/proyek/3-ppid.png" alt="Proyek 3" />
+            <div class="project-card-content">
+              <h3>Sistem PPID Dinas Kesehatan Provinsi DKI Jakarta</h3>
+              <p>
+                Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang
+                digunakan, seperti **Vue.js** dan **Firebase**.
+              </p>
+              <a href="https://github.com/namakamu/namarepo2" target="_blank"
+                >Lihat di GitHub &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/images/proyek/4-website-dinkes.png"
+              alt="Proyek 4"
+            />
+            <div class="project-card-content">
+              <h3>Website Dinas Kesehatan DKI Jakarta</h3>
+              <p>
+                Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang
+                digunakan, seperti **Vue.js** dan **Firebase**.
+              </p>
+              <a href="https://github.com/namakamu/namarepo2" target="_blank"
+                >Lihat di GitHub &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img src="assets/images/proyek/5-jaksimpel.png" alt="Proyek 5" />
+            <div class="project-card-content">
+              <h3>jakSIMPEL</h3>
+              <p>
+                Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang
+                digunakan, seperti **Vue.js** dan **Firebase**.
+              </p>
+              <a href="https://github.com/namakamu/namarepo2" target="_blank"
+                >Lihat di GitHub &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/images/proyek/6-monev-renstra.png"
+              alt="Proyek 6"
+            />
+            <div class="project-card-content">
+              <h3>Monitoring dan Evaluasi Rencana Strategis</h3>
+              <p>
+                Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang
+                digunakan, seperti **Vue.js** dan **Firebase**.
+              </p>
+              <a href="https://github.com/namakamu/namarepo2" target="_blank"
+                >Lihat di GitHub &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/images/proyek/7-middleware-dhis.png"
+              alt="Proyek 7"
+            />
+            <div class="project-card-content">
+              <h3>Middleware Data Kesehatan DKI Jakarta</h3>
+              <p>
+                Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang
+                digunakan, seperti **Vue.js** dan **Firebase**.
+              </p>
+              <a href="https://github.com/namakamu/namarepo2" target="_blank"
+                >Lihat di GitHub &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/images/proyek/8-template-ppid.png"
+              alt="Proyek 8"
+            />
+            <div class="project-card-content">
+              <h3>Template Sistem PPID Dinas Kesehatan Provinsi DKI Jakarta</h3>
+              <p>
+                Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang
+                digunakan, seperti **Vue.js** dan **Firebase**.
+              </p>
+              <a href="https://github.com/namakamu/namarepo2" target="_blank"
+                >Lihat di GitHub &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/images/proyek/9-jakarta-berjaga.png"
+              alt="Proyek 9"
+            />
+            <div class="project-card-content">
+              <h3>Jakarta Berjaga</h3>
+              <p>
+                Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang
+                digunakan, seperti **Vue.js** dan **Firebase**.
+              </p>
+              <a href="https://github.com/namakamu/namarepo2" target="_blank"
+                >Lihat di GitHub &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img src="assets/images/proyek/10-sipak.png" alt="Proyek 10" />
+            <div class="project-card-content">
+              <h3>SIPAK</h3>
+              <p>
+                Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang
+                digunakan, seperti **Vue.js** dan **Firebase**.
+              </p>
+              <a href="https://github.com/namakamu/namarepo2" target="_blank"
+                >Lihat di GitHub &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img src="assets/images/proyek/11-ejiwa.png" alt="Proyek 11" />
+            <div class="project-card-content">
+              <h3>e-Jiwa</h3>
+              <p>
+                Deskripsi singkat tentang proyek ini. Jelaskan teknologi yang
+                digunakan, seperti **Vue.js** dan **Firebase**.
+              </p>
+              <a href="https://github.com/namakamu/namarepo2" target="_blank"
+                >Lihat di GitHub &rarr;</a
+              >
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- Main Content Ends -->
+      </section>
 
-<!-- Template JS Files -->
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/styleswitcher.js"></script>
-<script src="js/preloader.min.js"></script>
-<script src="js/fm.revealator.jquery.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpGridGallery.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
+      <section id="contact">
+        <h2 class="section-title" data-aos="fade-up">Hubungi Saya</h2>
+        <p class="contact-content" data-aos="fade-up" data-aos-delay="200">
+          Saya terbuka untuk peluang kerja, kolaborasi, atau sekadar berbagi
+          cerita. Silakan hubungi saya melalui platform di bawah ini.
+        </p>
+        <div class="contact-links" data-aos="fade-up" data-aos-delay="300">
+          <a href="mailto:emailkamu@email.com" target="_blank">Email</a>
+          <a href="https://github.com/namakamu" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/namakamu" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://twitter.com/namakamu" target="_blank">Twitter</a>
+        </div>
+      </section>
+    </main>
 
-</body>
+    <footer>
+      <p>&copy; 2025 Fazar Bahari.</p>
+    </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 800,
+      });
+    </script>
+
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
